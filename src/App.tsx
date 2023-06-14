@@ -7,7 +7,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <AnimatePresence initial={false} mode="wait">
+    <AnimatePresence initial={false}>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Root />} />
         <Route path="/about" element={<About />} />
